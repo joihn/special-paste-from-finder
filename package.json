@@ -1,0 +1,33 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "special-paste-from-finder",
+  "version": "0.1.0",
+  "private": true,
+  "title": "Special Paste from Finder",
+  "description": "Paste the absolute path of a file or folder copied normally in Finder as plain text.",
+  "icon": "icon.png",
+  "author": "joihn",
+  "license": "MIT",
+  "platforms": ["macOS"],
+  "categories": ["Productivity", "Developer Tools"],
+  "commands": [
+    {
+      "name": "paste-file-path",
+      "title": "Paste File Path as Text",
+      "description": "Copy a file or folder with Command+C in Finder, then paste its absolute path as text into the active app.",
+      "mode": "no-view"
+    }
+  ],
+  "scripts": {
+    "build": "ray build",
+    "dev": "ray develop",
+    "typecheck": "tsc --noEmit"
+  },
+  "engines": {"node": ">=22.14.0"},
+  "dependencies": {"@raycast/api": "2.9.0"},
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "typescript": "^5.9.0"
+  }
+}
